@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="license_registration_is_invalid1" timestamp="2017-03-01T20:15:21" time="29.656" tests="0" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="7bf2d46602b8dd6ded5733362396b69d"/>
+      <property name="suiteName" value="License Registration is invalid1"/>
+      <property name="capabilities" value="chrome"/>
+    </properties>
+  </testsuite>
+  <testsuite name="license_key_should_not_be_registered_successfully_if_it_is_invalid3" timestamp="2017-03-01T20:15:21" time="25.354" tests="15" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="7bf2d46602b8dd6ded5733362396b69d"/>
+      <property name="suiteName" value="License Key should not be registered successfully if it is invalid3"/>
+      <property name="capabilities" value="chrome"/>
+    </properties>
+    <testcase classname="chrome.License Key should not be registered successfully if it is invalid3" name="I open the url &quot;Login URL&quot;4" time="30.789"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is invalid3" name="I am logged in as &quot;Valid Email Input&quot; and &quot;Valid Password Input&quot;5" time="25.047"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is invalid3" name="I pause for 1000ms6" time="24.412"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is invalid3" name="I click on the element &quot;Elementi Menu&quot;7" time="23.4"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is invalid3" name="I click on the element &quot;Register License Sidebar&quot;8" time="14.075"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is invalid3" name="I pause for 1000ms9" time="11.444"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is invalid3" name="I expect that element &quot;Register License Page Title&quot; contains the text &quot;Register Licenses Text&quot;10" time="10.438"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is invalid3" name="I set &quot;Invalid License Block 0 Input&quot; to the inputfield &quot;License Block 0 Field&quot;11" time="10.304"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is invalid3" name="I set &quot;Invalid License Block 1 Input&quot; to the inputfield &quot;License Block 1 Field&quot;12" time="10.056"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is invalid3" name="I set &quot;Invalid License Block 2 Input&quot; to the inputfield &quot;License Block 2 Field&quot;13" time="9.817"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is invalid3" name="I set &quot;Invalid License Block 3 Input&quot; to the inputfield &quot;License Block 3 Field&quot;14" time="9.519"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is invalid3" name="I set &quot;Invalid License Block 4 Input&quot; to the inputfield &quot;License Block 4 Field&quot;15" time="9.277"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is invalid3" name="I pause for 1000ms16" time="8.958"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is invalid3" name="I click on the button &quot;Register License Continue Button&quot;17" time="7.966"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is invalid3" name="I expect that element &quot;Register License Invalid Flash Element&quot; is visible18" time="5.607"/>
+  </testsuite>
+  <testsuite name="license_key_should_not_be_registered_successfully_if_it_is_already_registered20" timestamp="2017-03-01T20:15:47" time="4.298" tests="8" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="7bf2d46602b8dd6ded5733362396b69d"/>
+      <property name="suiteName" value="License Key should not be registered successfully if it is already registered20"/>
+      <property name="capabilities" value="chrome"/>
+    </properties>
+    <testcase classname="chrome.License Key should not be registered successfully if it is already registered20" name="I set &quot;Registered License Block 0 Input&quot; to the inputfield &quot;License Block 0 Field&quot;21" time="5.433"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is already registered20" name="I set &quot;Registered License Block 1 Input&quot; to the inputfield &quot;License Block 1 Field&quot;22" time="5.206"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is already registered20" name="I set &quot;Registered License Block 2 Input&quot; to the inputfield &quot;License Block 2 Field&quot;23" time="4.961"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is already registered20" name="I set &quot;Registered License Block 3 Input&quot; to the inputfield &quot;License Block 3 Field&quot;24" time="4.734"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is already registered20" name="I set &quot;Registered License Block 4 Input&quot; to the inputfield &quot;License Block 4 Field&quot;25" time="4.473"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is already registered20" name="I pause for 1000ms26" time="4.225"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is already registered20" name="I click on the button &quot;Register License Continue Button&quot;27" time="3.214"/>
+    <testcase classname="chrome.License Key should not be registered successfully if it is already registered20" name="I expect that element &quot;Register License Invalid Flash Element&quot; is visible28" time="1.252"/>
+  </testsuite>
+</testsuites>

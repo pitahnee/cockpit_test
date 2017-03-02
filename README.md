@@ -1,4 +1,4 @@
-Cockpit Test
+# Cockpit Test Files
 
 ====================
 
@@ -28,11 +28,6 @@ In order to run multiple test suites at a time, just type `npm run login,logout`
 1. In package.json file, just add your newly created test under scripts section, just like below.
 
     "scripts": {
-        "login": "node_modules\\.bin\\wdio wdio.conf.js --spec ./src/features/login.feature & node report_processor.js",
-        "logout": "node_modules\\.bin\\wdio wdio.conf.js --spec ./src/features/logout.feature & node report_processor.js",
-        "licenseRegistrationElements": "node_modules\\.bin\\wdio wdio.conf.js --spec ./src/features/Elementi//licenseRegistrationElements.feature & node report_processor.js",
-        "licenseRegistrationInvalid": "node_modules\\.bin\\wdio wdio.conf.js --spec ./src/features/Elementi//licenseRegistrationInvalid.feature & node report_processor.js",
-        "licenseRegistrationValid": "node_modules\\.bin\\wdio wdio.conf.js --spec ./src/features/Elementi//licenseRegistrationValid.feature & node report_processor.js",
         "new test name": "node_modules\\.bin\\wdio wdio.conf.js --spec path to feature file/licenseRegistrationValid.feature & node report_processor.js"
     },
 

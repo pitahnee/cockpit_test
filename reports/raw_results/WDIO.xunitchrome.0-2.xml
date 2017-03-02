@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="license_registration_elements1" timestamp="2017-03-01T20:15:21" time="20.762" tests="0" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="6fd18211ebeb0bf92a1071f58c82f65e"/>
+      <property name="suiteName" value="License Registration Elements1"/>
+      <property name="capabilities" value="chrome"/>
+    </properties>
+  </testsuite>
+  <testsuite name="check_register_license_page_and_its_elements_are_visible8" timestamp="2017-03-01T20:15:21" time="20.758" tests="7" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="6fd18211ebeb0bf92a1071f58c82f65e"/>
+      <property name="suiteName" value="Check register license page and its elements are visible8"/>
+      <property name="capabilities" value="chrome"/>
+    </properties>
+    <testcase classname="chrome.Check register license page and its elements are visible8" name="I open the url &quot;Login URL&quot;4" time="30.806"/>
+    <testcase classname="chrome.Check register license page and its elements are visible8" name="I am logged in as &quot;Valid Email Input&quot; and &quot;Valid Password Input&quot;5" time="24.746"/>
+    <testcase classname="chrome.Check register license page and its elements are visible8" name="I pause for 1000ms6" time="19.987"/>
+    <testcase classname="chrome.Check register license page and its elements are visible8" name="I click on the element &quot;Elementi Menu&quot;9" time="18.983"/>
+    <testcase classname="chrome.Check register license page and its elements are visible8" name="I click on the element &quot;Register License Sidebar&quot;10" time="13.808"/>
+    <testcase classname="chrome.Check register license page and its elements are visible8" name="I pause for 1000ms11" time="11.198"/>
+    <testcase classname="chrome.Check register license page and its elements are visible8" name="I expect that element &quot;Register License Page Title&quot; contains the text &quot;Register Licenses Text&quot;12" time="10.191"/>
+  </testsuite>
+</testsuites>

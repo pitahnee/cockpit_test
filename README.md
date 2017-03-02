@@ -28,8 +28,8 @@ In order to run multiple test suites at a time, just type `npm run login,logout`
 1. In package.json file, just add your newly created test under scripts section, just like below.
 
     "scripts": {
-        "new test name": "node_modules\\.bin\\wdio wdio.conf.js --spec path to feature file/licenseRegistrationValid.feature & node report_processor.js"
-    },
+        "new test name": "node_modules\\.bin\\wdio wdio.conf.js --spec <path to feature file>/licenseRegistrationValid.feature & node report_processor.js"
+    },`
 
 # How to create new test
 

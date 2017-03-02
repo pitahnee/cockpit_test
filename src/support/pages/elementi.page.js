@@ -93,8 +93,8 @@ class ElementiPage extends Page {
          if(element == 'Register License Valid Flash Element') {
             new_element = '(//div[@id="flash-notification-info"]/div[@class="content"])';
         }
-        console.log('current element is ', element)
-        console.log('current element is ', new_element)
+        // console.log('current element is ', element)
+        // console.log('current element is ', new_element)
         return new_element;
     }
 

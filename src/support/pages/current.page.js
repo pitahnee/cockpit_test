@@ -15,7 +15,7 @@ class currentPage extends Page {
         if(this.pageURL == 'https://cockpit-staging.spinetix.com/licenses/keys/new' || this.pageURL == 'https://cockpit-staging.spinetix.com/licenses/keys') {
             page_filename = 'elementi.page';
         }
-        console.log('current page is: ', page_filename)
+        // console.log('current page is: ', page_filename)
         return page_filename;
     }
 

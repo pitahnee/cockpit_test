@@ -23,9 +23,17 @@ fs.readdir(xml_folder, (err, contents) => {
 
         var now = Date.now();
 
+        // if archive folder is not existing, create archive folder
+        if(!fs.existsSync(archive)) {
+            fs.mkdirSync(archive);
+        }
         // copy xml file to archive
         fs.createReadStream(xml_folder + '/' + item).pipe(fs.createWriteStream(archive + '/' + now + '.xml'));
 
+        // if archive folder is not existing, create archive folder
+        if(!fs.existsSync(archive_html)) {
+            fs.mkdirSync(archive_html);
+        }
         // copy html file to archive
         fs.createReadStream(html).pipe(fs.createWriteStream(archive_html + '/' + now + '.html'));
 

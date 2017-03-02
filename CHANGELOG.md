@@ -1,55 +1,24 @@
 # Changelog
 
-## [1.1.0] - 2017-01-14
+## [1.1.0] - 2017-03-01
 ### Added 
-- Changelog
-- Unit-tests set-up using Jest
-- Basic unit-tests for all Javascript code
-- Rules:
-    - [Given] `the (element|inputfield) "([^"]*)?"( not)* contains any text`
-    - [Then] `I expect that (element|inputfield) "([^"]*)?"( not)* matches the text "([^"]*)?"`
-- Lib function `checkIfElementExists` so it can be used by multiple tests to check if an element exists
-- Favicon to the demo-app
+- Action `loggedIn` - this function will accept username and password and will login to the site.
+- Applied WebdriverIO Page Object Pattern
+- Added `pages/` directory in support to store page object files
+- Used WebdriverIO junit reporter and junit-viewer to convert reports in HTML format
+- Added `report_processor` file that will process junit xml to html, create and archive html file
 
 ### Changed
-- Moved the boilerplate code from `test/` to `src/` to make clear it's the 
-source of the project and separate if from the actual test code.
-- ESLint configuration now matches ES6 `comma-dangle`
-- Updated dependencies
-    - `babel-reset-2015` 
-    - `babel-register` 
-    - `wdio-phantomjs-service`
-    - `webdriverio`
-    - `wdio-cucumber-framework`
-    - `wdio-spec-reporter`
-    - `eslint`
-    - `eslint-config-airbnb-base`
-- Updated `eslint` & `eslint-config-airbnb-base` dev. dependencies
-- Updated rules to make them more logical:
-    - [Given] `the (element|inputfield) "([^"]*)?"( not)* contains the text "([^"]*)?"`
-    - [Given] `the (element|inputfield) "([^"]*)?"( not)* contains any text`
-    - [Then] `I expect that element "([^"]*)?"( not)* contains the same text as element "([^"]*)?"`
-    - [Then] `I expect that (element|inputfield) "([^"]*)?"( not)* contains any text`
-- Updated readme
-- The demo app http-server now runs in silent mode to prevent console cluttering during tests
-- Updated contributing & pull request template with information about unit tests
-- Updated documentation link for keypress (thanks [@jjanssen](https://github.com/jjanssen))
+- Added `browser.windowHandleSize({width: 1200, height: 1000});` 
+in `openWebsite` to resize window
+- Updated action and check js files with the following line of codes to get the 
+current page name and get the exact value of input and elements.
+    - `var currentPage = require('../pages/current.page');` 
+    - `var page_filename = currentPage.getPageFilename();` returns the filename of the page
+    - `var pagename = require('../pages/'+page_filename+'');` define the page required for the current page
+    - `var new_value = pagename.getValue(value);` get actual value
+    - `var new_element = pagename.getElement(element);` get actual selector
 
 ### Fixed
-- Tests that where failing for unclear reasons
-    - `CheckClass` now correctly identifies the false case
-    - `CheckContent` no longer fails when no expected text is defined
-- Chai `expect()` was not used in all tests
-- Chai `expect.should` was incorrectly used (is now `expect.to`)
-- Tests
-    - `clickElement` Now checks if element exists to prevent silent fail
-    - `setInputField` Now checks if element exists to prevent silent fail
-    - `checkUrlInPath` Now checks for the current domain instead of the baseurl domain
 
 ### Removed
-- `checkContent` as it is now replaced with `checkContainsText` and `checkContainsAnyText`
-
-
-## [1.0.0] - 2016-09-23
-### Changed
-- The boilerplate is now using WebdriverIO 4.2

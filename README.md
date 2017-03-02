@@ -5,7 +5,8 @@
 # How to setup test environment
 
 1. Clone this git repo `git clone https://github.com/tiffanytomol/cockpit_test` 
-2. Install dependencies. Type `npm install`
+2. Install Node. Get installer from here https://nodejs.org/en/download/
+3. Install dependencies. Type `npm install`
 
 # How to run single test
 
@@ -18,10 +19,6 @@ You can try to run either of these:
 - `npm run licenseRegistrationElements`
 - `npm run licenseRegistrationInvalid`
 - `npm run licenseRegistrationValid`
-
-# How to run multiple tests
-
-In order to run multiple test suites at a time, just type `npm run login,logout`
 
 # How to create shortcut to run a test
 
